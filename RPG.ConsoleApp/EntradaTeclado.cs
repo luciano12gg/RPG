@@ -2,6 +2,13 @@
 
 public static class EntradaTeclado
 {
+    private static void SalirPorEntradaNoInteractiva()
+    {
+        Console.Error.WriteLine("X Error: No hay entrada interactiva (EOF). Ejecuta el contenedor con -it.");
+        Environment.Exit(0);
+        throw new InvalidOperationException("Salida por EOF.");
+    }
+
     public static int? LeerEntero(string mensaje, bool ok)
     {
         int numero = 0;
@@ -10,7 +17,11 @@ public static class EntradaTeclado
             Console.Write(mensaje);
             string? texto = Console.ReadLine();
 
-            if (string.IsNullOrWhiteSpace(texto))
+            if (texto is null)
+            {
+                SalirPorEntradaNoInteractiva();
+            }
+            else if (string.IsNullOrWhiteSpace(texto))
             {
                 Error("no se puede dejar vacio");
                 ok = false;
@@ -42,13 +53,13 @@ public static class EntradaTeclado
     public static int LeerOpcion(string mensaje, int min, int max)
     {
         int numero = 0;
-        bool ok;
+        bool ok = false;
 
         do
         {
             Console.Write(mensaje);
             string? texto = Console.ReadLine();
-
+            
             if (string.IsNullOrWhiteSpace(texto))
             {
                 Error("No se puede dejar vacío.");
@@ -77,6 +88,11 @@ public static class EntradaTeclado
     
     public static void Pausa(string mensaje)
     {
+        if (Console.IsInputRedirected)
+        {
+            return;
+        }
+
         Console.WriteLine();
         Console.WriteLine(mensaje);
         Console.ReadKey(true);
