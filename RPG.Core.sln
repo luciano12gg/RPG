@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG.Core", "RPG.Core\RPG.Core.csproj", "{378696F2-F148-4E79-BB61-92419A6876CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG.ConsoleApp", "RPG.ConsoleApp\RPG.ConsoleApp.csproj", "{86E2CF82-53C1-4FB5-B2F3-15A61CFD14B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG.Tests", "RPG.Tests\RPG.Tests.csproj", "{56C9267B-5FA5-4639-B4D5-BA4FA18BD02D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{378696F2-F148-4E79-BB61-92419A6876CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{378696F2-F148-4E79-BB61-92419A6876CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{378696F2-F148-4E79-BB61-92419A6876CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{378696F2-F148-4E79-BB61-92419A6876CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86E2CF82-53C1-4FB5-B2F3-15A61CFD14B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E2CF82-53C1-4FB5-B2F3-15A61CFD14B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E2CF82-53C1-4FB5-B2F3-15A61CFD14B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E2CF82-53C1-4FB5-B2F3-15A61CFD14B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C9267B-5FA5-4639-B4D5-BA4FA18BD02D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C9267B-5FA5-4639-B4D5-BA4FA18BD02D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C9267B-5FA5-4639-B4D5-BA4FA18BD02D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C9267B-5FA5-4639-B4D5-BA4FA18BD02D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
